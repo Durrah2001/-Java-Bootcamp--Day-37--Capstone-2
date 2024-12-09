@@ -68,6 +68,8 @@ public class LearningPathService {
         existingLearningPath.setCompletedCourses(learningPath.getCompletedCourses());
         existingLearningPath.setStatus(learningPath.getStatus());
         existingLearningPath.setProgressPercentage(learningPath.getProgressPercentage());
+        existingLearningPath.setLastInteractiveDate(learningPath.getLastInteractiveDate());
+
 
         learningPathRepository.save(existingLearningPath);
 
